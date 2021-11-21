@@ -5,17 +5,16 @@
 <title>Home</title>
 </head>
 <body>
-	<h1></h1>
-	<!-- Menu -->
-	<nav>
-		<ul>
-			<li>
-				<a th:href="@{/sobre}">Sobre</a>
-			</li>
-			<li>
-				<a th:href="@{/cardapio}">Cardapio</a>
-			</li>
-		</ul>
-	</nav>
+<header>
+      <a th:href=@{/index}><img th:src=@{imgs/logo.png} alt="Logo" id="logo" /></a>
+      <nav class="navegation=container">
+        <ul id="menu" role="menu">
+          <li><a th:href="@{/index}">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 </body>
 </html>

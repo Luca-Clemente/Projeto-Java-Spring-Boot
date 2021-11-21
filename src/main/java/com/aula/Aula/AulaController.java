@@ -10,14 +10,4 @@ public class AulaController {
 	public String principal() {
 		return "index";
 	}
-	
-	@GetMapping("/sobre")
-	public String pagSobre() {
-		return "sobre";
-	}
-	
-	@GetMapping("/cardapio")
-	public String pagCardapio() {
-		return "cardapio";
-	}
 }

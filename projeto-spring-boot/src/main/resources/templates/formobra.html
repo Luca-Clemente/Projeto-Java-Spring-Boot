@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xlmns="http//www.thymeleaf.org">
+<head>
+	<title>Cadastro de obras</title>
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+</head>
+
+<body>
+	<form action="#" th:action="@{/obra}" method=post th:object="${obra}">
+		<label for="nome"> Nome </label>
+		<input type="text" th:field="*{nome}" id="nome">
+		<label for="autor"> Autor </label>
+		<input type="text" th:field="*{autor}" id="autor">
+		<label for="ano"> Ano </label>
+		<input type="text" th:field="*{ano}" id="ano">
+		<input type="submit" value="Cadastrar">
+	
+	</form>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

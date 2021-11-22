@@ -9,3 +9,8 @@ CREATE TABLE IF NOT EXISTS compradores (
 	nome varchar(50),
 	email varchar(20)
 );
+CREATE TABLE IF NOT EXISTS funcionarios (
+	id serial PRIMARY KEY,
+	nome varchar(50),
+	cargo varchar (20)
+);

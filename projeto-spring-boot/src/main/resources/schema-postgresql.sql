@@ -14,3 +14,9 @@ CREATE TABLE IF NOT EXISTS funcionarios (
 	nome varchar(50),
 	cargo varchar (20)
 );
+CREATE TABLE IF NOT EXISTS materiais(
+	id serial PRIMARY KEY,
+	nome varchar(50),
+	quantidade int
+	
+);

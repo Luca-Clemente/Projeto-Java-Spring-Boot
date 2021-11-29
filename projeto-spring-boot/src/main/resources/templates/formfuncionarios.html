@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xlmns="http//www.thymeleaf.org">
+<head>
+	<title>Cadastro de funcionarios</title>
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+	<link rel="stylesheet" th:href="@{css/forms.css}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<form action="#" th:action="@{/funcionarios}" method=post th:object="${funcionarios}">
+		<label for="nome"> Nome </label>
+		<input type="text" th:field="*{nome}" id="nome">
+		<label for="cargo"> Cargo </label>
+		<input type="text" th:field="*{cargo}" id="cargo">
+		<input type="submit" value="Cadastrar">
+	</form>
+</body>
+</html>

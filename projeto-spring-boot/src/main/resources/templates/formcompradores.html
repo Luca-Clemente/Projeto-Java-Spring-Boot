@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xlmns="http//www.thymeleaf.org">
+<head>
+	<title>Cadastro de obras</title>
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+	<link rel="stylesheet" th:href="@{css/forms.css}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<form action="#" th:action="@{/compradores}" method=post th:object="${compradores}">
+		<label for="nome"> Nome </label>
+		<input type="text" th:field="*{nome}" id="nome">
+		<label for="email"> E-mail </label>
+		<input type="text" th:field="*{email}" id="email">
+		<input type="submit" value="Cadastrar">
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xlmns="http//www.thymeleaf.org">
+<head>
+	<title>Cadastro de Materiais</title>
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+	<link rel="stylesheet" th:href="@{css/forms.css}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<form action="#" th:action="@{/materiais}" method=post th:object="${materiais}">
+		<label for="nome"> Nome </label>
+		<input type="text" th:field="*{nome}" id="nome">
+		<label for="quantidade"> Quantidade </label>
+		<input type="text" th:field="*{quantidade}" id="quantidade">
+		<input type="submit" value="Cadastrar">
+	</form>
+</body>
+</html>

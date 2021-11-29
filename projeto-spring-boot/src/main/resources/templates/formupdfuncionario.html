@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Atualização de funcionarios</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{css/formobra.css}">
+</head>
+<body>
+    <form action="#" th:action="@{'/upd/' + ${id}}" method=post th:object="${funcionarios}">
+    	<label for="nome">Nome :</label>
+    	 <input type="text" th:field="*{nome}"><br>
+    	 <label for="cargo"> Cargo :</label>
+    	 <input type="text" th:field="*{cargo}">
+    	<input type="submit" value="Editar">
+    </form>
+</body>
+</html>

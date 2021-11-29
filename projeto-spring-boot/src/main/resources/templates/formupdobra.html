@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Atualização de obras</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{css/formobra.css}">
+</head>
+<body>
+    <form action="#" th:action="@{'/upd/' + ${id}}" method=post th:object="${obra}">
+    	<label for="nome">Nome :</label>
+    	 <input type="text" th:field="*{nome}"><br>
+    	 <input type="text" th:field="*{autor}">
+    		<input type="text" th:field="*{ano}">
+    	<input type="submit" value="Editar">
+    </form>
+</body>
+</html>

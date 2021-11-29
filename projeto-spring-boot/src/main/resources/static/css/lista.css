@@ -1,0 +1,51 @@
+/*
+Essa página conterá os estilos das páginas listacompradores, listafuncionarios,listamateriais e listaobras.
+para linkar essa página ao html dessas páginas cole no head :
+<link rel="stylesheet" th:href="@{css/lista.css}">
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	font-family: 'Roboto Mono', monospace
+}
+
+table{
+	border: 1px solid black;
+	text-align: center;
+}
+table thead {
+	font-weight:700;
+	font-size: 1.1rem;
+}
+
+table td {
+	padding: 10px;
+}
+
+table a{
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}
+table a:hover{
+	color: rgba(0,0,0,0.7);
+}
+
+table form input[type=submit]{
+	padding: 10px;
+	font-weight: 700;
+	color: red;
+	cursor: pointer;
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+

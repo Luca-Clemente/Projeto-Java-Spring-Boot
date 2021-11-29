@@ -1,0 +1,19 @@
+html{
+	font-family:"Roboto Mono", monospace;
+}
+.img-center{
+	display:flex;
+	justify-content: center;
+}
+.text{
+	text-align:center;
+}
+.text h1{
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height:1.2;
+}
+.text p{
+	font-size: 1rem;
+	line-height: 1.5;
+}

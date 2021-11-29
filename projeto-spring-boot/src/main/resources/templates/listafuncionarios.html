@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>
+		Lista de funcionarios
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" th:href="@{css/lista.css}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<table>
+		<thead>
+		<tr>
+			<td> ID </td>
+			<td> Nome </td>
+			<td> Cargo</td>
+			<td></td>
+			<td></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="fnc : ${funcionarios}">
+		<td th:text="${fnc.id}"></td>
+		<td th:text="${fnc.nome}"></td>
+		<td th:text="${fnc.cargo}"></td>
+		<td> <a th:href="@{'upd/' + ${fnc.id}}">Editar</a> </td>
+		<td> <form th:action="@{'apagar/funcionarios/' + ${fnc.id}}" method="post">
+			<input type="submit" value="X">
+		</form>
+		</tbody>
+	</table>
+</body>
+</html>

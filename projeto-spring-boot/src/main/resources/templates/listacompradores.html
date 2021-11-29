@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>
+		Lista de Compradores
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" th:href="@{css/lista.css}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<table>
+		<thead>
+		<tr>
+			<td> ID </td>
+			<td> Nome </td>
+			<td> E-mail</td>
+			<td></td>
+			<td></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="cpr : ${compradores}">
+		<td th:text="${cpr.id}"></td>
+		<td th:text="${cpr.nome}"></td>
+		<td th:text="${cpr.email}"></td>
+		</tbody>
+	</table>
+</body>
+</html>
